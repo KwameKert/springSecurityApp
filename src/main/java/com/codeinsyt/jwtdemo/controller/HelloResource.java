@@ -33,6 +33,12 @@ public class HelloResource {
         return "Hello World";
     }
 
+
+    @RequestMapping("/call")
+    public String call(){
+        return "Call Me World";
+    }
+
     @PostMapping("/authenticate")
     public ResponseEntity<?> createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception{
         try{
