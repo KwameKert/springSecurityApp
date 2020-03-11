@@ -39,6 +39,12 @@ public class HelloResource {
         return "Call Me World";
     }
 
+
+    @RequestMapping("/me")
+    public String me(){
+        return " Me World";
+    }
+
     @PostMapping("/authenticate")
     public ResponseEntity<?> createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception{
         try{
